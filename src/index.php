@@ -10,6 +10,6 @@
     <?php
     echo "<h1>LA VIDA ES DURA</h1>"
     ?>
-    <img src="../img/harold.jpg" alt="">
+    <img src="img/harold.jpg" alt="">
 </body>
 </html>
