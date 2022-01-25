@@ -1,10 +1,10 @@
 pipeline {
-    agent { docker { image 'php:7.0-apache' } }
+    agent any
     stages {
         stage('build') {
             steps {
                 sh 'docker build -t hello-word-php-apache .'
-                sh 'docker run -p 8081:80 hello-word-php-apache'
+                sh 'docker run -d --rm -p 8081:80 hello-word-php-apache'
             }
         }
     }
